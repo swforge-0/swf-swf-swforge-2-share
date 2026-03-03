@@ -9,6 +9,13 @@
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/jquery-3.5.1.min.js");
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/main.js");
   
+  //Galery_1
+  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/galery_1/modernizr.min.js");
+  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/galery_1/classie.js");
+  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/galery_1/photostack.js");
+  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/galery_1/component.css");
+  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/galery_1/normalize.css");
+  
   $APPLICATION->SetTitle(Loc::getMessage("TITLE"));
 ?>
 <!DOCTYPE html>
@@ -56,7 +63,7 @@
               ?>
             </div>
           </div>
-          <div class="cont-1 z-index-15">
+          <div id="1C_integ" class="cont-1 z-index-15">
             <div class="title-1 margin-top-25">
               <?php echo Loc::getMessage("TITLE_ABOUT_1");?>
             </div>
@@ -89,11 +96,11 @@
                 </div>
               </div>
             </div>
-            <div class="but_1 margin-top-45">
+            <div class="but_1 margin-top-50 go_to_link_ya" p_link="#id_form_1">
               <?php echo Loc::getMessage("BUT_LEAD_1");?>
             </div>
           </div>
-          <div class="bg-1 z-index-15">
+          <div class="bg-1 z-index-12">
           </div>
         </div>
         <div class="bg-2 z-index-10">
