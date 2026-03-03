@@ -1,0 +1,113 @@
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: row;
+}
+.flex-col-rev {
+  flex-direction: row-reverse;
+}
+.flex-row {
+  flex-direction: column;
+}
+.flex-row-rev {
+  flex-direction: column-reverse;
+}
+
+.flex-a-center {
+  justify-content: center;
+}
+.flex-a-sb {
+  justify-content: space-between;
+}
+.flex-a-start {
+  justify-content: flex-start;
+}
+.flex-a-end {
+  justify-content: flex-end;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-spec-a-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-spec-a-center-ta-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ta_center {
+  text-align: center;
+}
+
+.he_100p {
+  height: 100%;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index-15 {
+  z-index: 15;
+}
+
+.z-index-20 {
+  z-index: 20;
+}
+
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+.margin-top-15 {
+  margin-top: 15px;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-top-25 {
+  margin-top: 25px;
+}
+.margin-top-30 {
+  margin-top: 30px;
+}
+.margin-top-35 {
+  margin-top: 35px;
+}
+.margin-top-40 {
+  margin-top: 40px;
+}
+.margin-top-45 {
+  margin-top: 45px;
+}
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.margin-left-30 {
+  margin-left: 30px;
+}
+
+.padding-left-30 {
+  padding-left: 30px;
+}
+
+.width-fit {
+  width: fit-content;
+}
+.width_70proc {
+  width: 70%;
+}
+.width_90proc {
+  width: 90%;
+}
