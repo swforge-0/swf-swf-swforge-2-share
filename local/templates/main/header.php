@@ -9,12 +9,12 @@
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/jquery-3.5.1.min.js");
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/main.js");
   
-  //Galery_1
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/galery_1/modernizr.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/galery_1/classie.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/galery_1/photostack.js");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/galery_1/component.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/galery_1/normalize.css");
+  //photostack
+  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/photostack/modernizr.min.js");
+  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/photostack/classie.js");
+  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/photostack/photostack.js");
+  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/photostack/component.css");
+  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/photostack/normalize.css");
   
   $APPLICATION->SetTitle(Loc::getMessage("TITLE"));
 ?>
@@ -67,7 +67,7 @@
             <div class="title-1 margin-top-25">
               <?php echo Loc::getMessage("TITLE_ABOUT_1");?>
             </div>
-            <div class="p-1 margin-top-20 width_90proc">
+            <div class="p-1 margin-top-30 width_90proc">
               <?php echo Loc::getMessage("TITLE_ABOUT_1_1");?>
             </div>
             <div class="flex flex-row flex-a-start margin-top-30 padding-left-30">

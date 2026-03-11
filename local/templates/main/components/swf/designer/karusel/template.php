@@ -13,14 +13,17 @@
 					<h2 class="photostack-title"><?php echo $val["arFields"]["NAME"];?></h2>
         </figcaption>
         
-        <a href="<?php echo $arProps["GAL"][0];?>" rel="lightgallery">
-          <img class="photostack-img" src="<?php echo $arProps["GAL"][0];?>" style="" />
+        <a href="<?php echo $arProps["IMG"];?>" rel="lightgallery">
+          <img class="photostack-img" src="<?php echo $arProps["IMG"];?>" style="" />
         </a>
         
         <figcaption>
           <p>
             <a href="<?php echo $arProps["LINK"];?>" target="_blank" class="photostack-link" title="<?php echo Loc::getMessage("CAP_LINK_FOR_NEW_WIN");?>"><?php echo Loc::getMessage("CAP_LINK_FOR_GOTO_SITE");?> <?php echo $arProps["LINK"];?></a>
           </p>
+          <p><br>
+						<?php echo $arProps["TEXT"];?>
+					</p>
         </figcaption>
       </figure>
     <?php endforeach;?>

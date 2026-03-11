@@ -5,6 +5,8 @@
 <div class="color-1">
   <div class="container">
     <div class="flex flex-col flex-a-center padding-bottom-30">
+      <div class="bg-5">
+      </div>
       <div class="form-1">
         <form id="id_form_1">
           <div class="title-2 margin-top-25">

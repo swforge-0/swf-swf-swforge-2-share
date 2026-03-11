@@ -8,22 +8,22 @@ $aMenuLinks = [
         ""
     ],
     [
-        "О компании",
-        "/about/",
+        "Работы",
+        "#photostack-1",
         [],
         [],
         ""
     ],
     [
         "Услуги",
-        "/service/",
+        "#develop_site_bitrix",
         [],
         [],
         ""
     ],
     [
         "Контакты",
-        "/contacts/",
+        "#y_foot",
         [],
         [],
         ""

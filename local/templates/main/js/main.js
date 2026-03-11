@@ -2,6 +2,8 @@ $(document).ready(function(){
   //Инициализируем галерею портфолио
   new Photostack(document.getElementById('photostack-1'));
   
+  $("#photostack-1").click();
+  
   //Плавный переход по якорям
   $('a[href^="#"]').on('click', function(event) {
     var target = this.hash;

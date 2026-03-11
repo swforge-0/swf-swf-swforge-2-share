@@ -9,15 +9,15 @@
       "swf:designer",
       "karusel",
       [
-        "IB"=>$_SESSION["arSettings"]["IB"]["content-works"],
+        "IBLOCK_ID"=>$_SESSION["arSettings"]["IB"]["content-works"],
       ],
     );
   ?>
   <div class="flex flex-row flex-a-start margin-top-m100 width_40proc color-1">
-    <div id="develop_site_bitrix" class="title-1 width_100proc ta_left padding-top-35 padding-left-50">
+    <div id="develop_site_bitrix" class="title-1 width_100proc ta_left padding-top-40 padding-left-50">
       <?php echo Loc::getMessage("TITLE_ABOUT_2");?>
     </div>
-    <div class="p-1 padding-left-50 width_60proc margin-top-25">
+    <div class="p-1 padding-left-50 width_60proc margin-top-35">
       <?php echo Loc::getMessage("TITLE_DEV_BITRIX_1");?>
     </div>
     <div class="p-1 padding-left-50 width_60proc margin-top-25">
@@ -55,7 +55,7 @@
         <?php echo Loc::getMessage("TITLE_DEV_BITRIX_6");?>
       </div>
     </div>
-    <div class="flex flex-col flex-a-start width_60proc margin-top-70 padding-left-50">
+    <div class="flex flex-col flex-a-start width_60proc margin-top-50 padding-left-50">
       <div class="width-fit">
         <img class="icon-1" src="<?php echo SITE_TEMPLATE_PATH;?>/img/bitrix_dev_5.svg" />
       </div>
@@ -113,6 +113,8 @@
         <?php echo Loc::getMessage("TITLE_PROCHEE_1");?>
       </div>
     </div>
+  </div>
+  <div class="bg-4 z-index-10">
   </div>
   <div class="bg-3 z-index-10">
   </div>

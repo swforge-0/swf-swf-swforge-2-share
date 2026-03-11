@@ -12,6 +12,10 @@ div {
   overflow: hidden;
 }
 
+a:focus {
+  outline: none !important;
+}
+
 .container-big {
   max-width: 1920px;
   min-width: 320px;
@@ -37,6 +41,9 @@ div {
   color: #fff;
 }
 
+.head {
+  padding-top: 10px;
+}
 .img-logo {
   width: 350px;
   height: 110px;
@@ -47,6 +54,7 @@ div {
 }
 .menu-1 {
   padding-left: 30px;
+  padding-top: 20px;
 }
 .menu-1 a {
   color: #000;
@@ -115,11 +123,32 @@ div {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.bg-4 {
+  position: absolute;
+  top: 20%;
+  left: calc(50% - 90px);
+  width: 350px;
+  height: 350px;
+  /* background-image: url("../img/bg-4.jpg"); */
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bg-5 {
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+  margin-right: 200px;
+  background-image: url("../img/bg-5.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .cont-1 {
   position: absolute;
   width: 550px;
-  height: 480px;
+  height: 490px;
   background-color: #fff;
   padding-left: 30px;
 }
@@ -157,18 +186,38 @@ div {
   font-weight: 500;
 }
 
+.p-2 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.link_contact {
+  display: block;
+  width: fit-content;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.link_contact:hover {
+  border-bottom: 1px solid #fff;
+}
+
 .icon-1 {
   width: 40px;
   height: 40px;
 }
+.icon-2 {
+  width: 18px;
+  height: 18px;
+}
 
 .body {
-  margin-top: -110px;
+  margin-top: -116px;
 }
 
 .sect-1 {
   width: 100%;
-  padding-top: 92px;
+  padding-top: 106px;
 }
 .sect-2 {
   width: 100%;
@@ -186,20 +235,19 @@ div {
   background-color: #fff;
 }
 
-
 .but_1 {
   width: fit-content;
   padding: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #ee0000;
+  background-color: #db4437;
   color: #fff;
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
 }
 .but_1:hover {
-  background-color: #c90000;
+  background-color: #d95e53;
 }
 
 .form-1 {
@@ -216,6 +264,23 @@ div {
   min-height: 100px;
   background-color: #000;
   color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.foot-bg-6 {
+  background-image: url("../img/bg-6.jpg");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.img-logo-foot {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-image: url("../img/swf_logo_2.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .error {
