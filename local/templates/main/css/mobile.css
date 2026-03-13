@@ -1,0 +1,167 @@
+@media (max-width: 1707px) {
+    .sect-1 .develop_site_bitrix {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 1466px) {
+    .title-1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 1320px) {
+    .title-1 {
+        font-size: 35px;
+    }
+    .container {
+        width: 90%;
+    }
+    .bg-3 {
+        left: unset;
+        right: 5vw;
+        width: 340px;
+        height: 170px;
+    }
+    .bg-4 {
+        display: none;
+    }
+}
+@media (max-width: 1160px) {
+    .bg-3 {
+        width: 320px;
+        height: 160px;
+    }
+    .title-1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1057px) {
+    .cont-1 {
+        width: 100%;
+        padding-left: 0px;
+        height: unset;
+        padding-bottom: 35px;
+    }
+    .cont-1 .but_1 {
+        margin-top: 45px;
+    }
+    .cont-1 .margin-top-20 {
+        margin-top: 30px;
+    }
+    .body {
+        margin-top: 0px;
+    }
+    .sect-1 {
+        flex-direction: column-reverse;
+        padding-top: 120px;
+    }
+    .sect-1 .develop_site_bitrix {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .sect-1 .develop_site_bitrix .padding-left-50 {
+        padding-left: 0px;
+    }
+    .sect-1 .develop_site_bitrix .margin-top-50 {
+        margin-top: 40px;
+    }
+    .sect-1 .develop_site_bitrix .width_100proc {
+        width: 90%;
+        margin: auto;
+    }
+    .transform_icon_1 {
+        transform: rotate(-90deg);
+    }
+    .sect-1 .width_60proc {
+        width: 90%;
+        margin: auto;
+        margin-top: 35px;
+    }
+    .sect-1 .title-1 {
+        padding-top: 20px;
+    }
+    .sect-1 .photostack {
+        width: 100%;
+    }
+    .bg-1 {
+        display: none;
+    }
+    .bg-2 {
+        display: none;
+    }
+    .cont-1 {
+        position: relative;
+    }
+    .sect-2 {
+        padding-top: 35px;
+    }
+    .sect-2 .container {
+        flex-direction: column-reverse;
+    }
+    .sect-2 .width_30proc {
+        width: 100%;
+    }
+    .sect-2 .tehpodder {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .sect-2 .padding-left-50 {
+        padding-left: 0px;
+    }
+    .sect-2 .width_70proc {
+        width: 90%;
+    }
+    .bg-3 {
+        display: none;
+    }
+    .bg-5 {
+        display: none;
+    }
+    .form-1_flex_container {
+        justify-content: flex-start;
+    }
+    .container-mob {
+        max-width: 1300px;
+        min-width: 320px;
+    }
+}
+@media (max-width: 1040px) {
+    .bg-3 {
+        width: 300px;
+        height: 150px;
+    }
+}
+@media (max-width: 970px) {
+    
+}
+@media (max-width: 500px) {
+    .form-1 {
+        width: 100%;
+    }
+    .title-1 {
+        font-size: 25px;
+    }
+    .title-2 {
+        font-size: 25px;
+    }
+    .title-3 {
+        font-size: 15px;
+    }
+    .form-1 input {
+        padding: 10px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .form-1 .flex-a-start {
+        flex-direction: column;
+    }
+    .but_1 {
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .photostack nav span {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}

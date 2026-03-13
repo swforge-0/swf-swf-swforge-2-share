@@ -1,289 +1,290 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: calibri;
-  font-size: 14px;
-  font-weight: 300;
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 div {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 a:focus {
-  outline: none !important;
+    outline: none !important;
 }
 
 .container-big {
-  max-width: 1920px;
-  min-width: 320px;
-  margin: auto;
+    max-width: 1920px;
+    min-width: 360px;
+    margin: auto;
 }
 .container {
-  max-width: 1300px;
-  min-width: 320px;
-  margin: auto;
+    max-width: 1300px;
+    min-width: 320px;
+    margin: auto;
 }
 
 .head-0 {
-  width: 100%;
-  height: 25px;
-  background-color: #333333;
+    width: 100%;
+    height: 25px;
+    background-color: #333333;
 }
 .menu-0 a {
-  color: #ababab;
-  text-decoration: none;
-  margin-right: 30px;
+    color: #ababab;
+    text-decoration: none;
+    margin-right: 30px;
 }
 .menu-0 a:hover {
-  color: #fff;
+    color: #fff;
 }
 
 .head {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 .img-logo {
-  width: 350px;
-  height: 110px;
-  background-image: url("../img/swf_logo_1.png");
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
+    width: 350px;
+    height: 110px;
+    background-image: url("../img/swf_logo_3.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .menu-1 {
-  padding-left: 30px;
-  padding-top: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
 }
 .menu-1 a {
-  color: #000;
-  font-size: 17px;
-  font-weight: 500;
-  text-decoration: none;
-  margin-right: 55px;
-  margin-top: -20px;
-  position: relative;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 55px;
+    margin-top: -20px;
+    position: relative;
 }
 .menu-1 a:hover {
-  color: #ee0000;
+    color: #ee0000;
 }
 .menu-1 a::after {
-  content: "▶";
-  font-size: 14px;
-  transition: transform 0.3s ease;
-  position: absolute;
-  right: -20px;
+    content: "▶";
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: -20px;
 }
 .menu-1 a:hover::after {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 .menu-1 a.active {
-  color: #ee0000;
+    color: #ee0000;
 }
 .menu-1 a.active::after {
-  content: "▶";
-  font-size: 14px;
-  transition: transform 0.3s ease;
-  position: absolute;
-  right: -20px;
-  transform: rotate(90deg);
+    content: "▶";
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: -20px;
+    transform: rotate(90deg);
 }
 
 .bg-1 {
-  float: right;
-  top: -80px;
-  right: 200px;
-  width: 500px;
-  height: 500px;
-  background-image: url("../img/bg-1.jpg");
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
+    float: right;
+    top: -91px;
+    right: 200px;
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/bg-1.jpg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .bg-2 {
-  position: absolute;
-  top: 0px;
-  right: -35px;
-  width: 500px;
-  height: 500px;
-  background-image: url("../img/bg-2.jpg");
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: -35px;
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/bg-2.jpg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .bg-3 {
-  position: absolute;
-  bottom: 30px;
-  left: calc(50% + 230px);
-  width: 360px;
-  height: 180px;
-  background-image: url("../img/bg-3.png");
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% + 230px);
+    width: 300px;
+    height: 150px;
+    /* background-image: url("../img/bg-3.png"); */
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .bg-4 {
-  position: absolute;
-  top: 20%;
-  left: calc(50% - 90px);
-  width: 350px;
-  height: 350px;
-  /* background-image: url("../img/bg-4.jpg"); */
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 90px);
+    width: 350px;
+    height: 350px;
+    background-image: url("../img/bg-4.jpg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.5;
 }
 .bg-5 {
-  width: 300px;
-  height: 300px;
-  margin-top: 50px;
-  margin-right: 200px;
-  background-image: url("../img/bg-5.svg");
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-right: 200px;
+    background-image: url("../img/bg-5.svg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .cont-1 {
-  position: absolute;
-  width: 550px;
-  height: 490px;
-  background-color: #fff;
-  padding-left: 30px;
+    position: absolute;
+    width: 550px;
+    height: 490px;
+    background-color: #fff;
+    padding-left: 30px;
 }
 
 .title-1 {
-  font-size: 45px;
-  font-weight: 700;
+    font-size: 45px;
+    font-weight: 700;
 }
 .title-1 span {
-  color: #ee0000;
+    color: #ee0000;
 }
 .title-2 {
-  font-size: 30px;
-  font-weight: 700;
-  color: #ee0000;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ee0000;
 }
 .title-2 span {
-  color: #000;
+    color: #000;
 }
 .title-3 {
-  font-size: 20px;
-  font-weight: 500;
-  color: gray;
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
 }
 .title-3 span {
-  color: #ee0000;
+    color: #ee0000;
 }
 
 .p-1 {
-  font-size: 17px;
-  font-weight: 300;
+    font-size: 17px;
+    font-weight: 300;
 }
 .p-1 span {
-  color: #ee0000;
-  font-weight: 500;
+    color: #ee0000;
+    font-weight: 500;
 }
 
 .p-2 {
-  font-size: 14px;
-  font-weight: 300;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .link_contact {
-  display: block;
-  width: fit-content;
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
+    display: block;
+    width: fit-content;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
 }
 .link_contact:hover {
-  border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .icon-1 {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
 }
 .icon-2 {
-  width: 18px;
-  height: 18px;
+    width: 18px;
+    height: 18px;
 }
 
 .body {
-  margin-top: -116px;
+    margin-top: -120px;
 }
 
 .sect-1 {
-  width: 100%;
-  padding-top: 106px;
+    width: 100%;
+    padding-top: 110px;
 }
 .sect-2 {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 75px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 75px;
 }
 
 .color-1 {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 .color-2 {
-  background-color: #000;
+    background-color: #000;
 }
 .color-3 {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .but_1 {
-  width: fit-content;
-  padding: 40px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #db4437;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
+    width: fit-content;
+    padding: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #db4437;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
 }
 .but_1:hover {
-  background-color: #d95e53;
+    background-color: #d95e53;
 }
 
 .form-1 {
-  width: 450px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .form-1 input {
-  padding: 20px;
-  margin-right: 10px;
+    padding: 20px;
+    margin-right: 10px;
 }
 
 .foot {
-  min-height: 100px;
-  background-color: #000;
-  color: #fff;
-  padding-top: 25px;
-  padding-bottom: 25px;
+    min-height: 100px;
+    background-color: #000;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .foot-bg-6 {
-  background-image: url("../img/bg-6.jpg");
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
+    background-image: url("../img/bg-6.jpg");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .img-logo-foot {
-  display: block;
-  width: 150px;
-  height: 50px;
-  background-image: url("../img/swf_logo_2.png");
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-image: url("../img/swf_logo_2.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .error {
-  background-color: #fff;
-  min-height: 600px;
+    background-color: #fff;
+    min-height: 600px;
 }
