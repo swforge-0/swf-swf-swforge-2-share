@@ -150,6 +150,8 @@
         height: 50px;
         width: fit-content;
         color: #fff;
+        margin-top: 2px;
+        margin-bottom: 10px;
     }
     .img-logo {
         width: 220px;
