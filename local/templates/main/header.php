@@ -66,6 +66,11 @@
                         );
                         ?>
                     </div>
+                    <div class="menu-mob">
+                        <div class="menu-mob-item"></div>
+                        <div class="menu-mob-item"></div>
+                        <div class="menu-mob-item"></div>
+                    </div>
                 </div>
             </div>
             <div class="head">
@@ -120,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="but_1 margin-top-55 go_to_link_ya" p_link="#id_form_1">
+                        <div class="but_1 margin-top-70 go_to_link_ya" p_link="#id_form_1">
                             <?php echo Loc::getMessage("BUT_LEAD_1");?>
                         </div>
                     </div>

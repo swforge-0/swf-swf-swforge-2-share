@@ -14,7 +14,7 @@
         );
     ?>
     <div class="develop_site_bitrix flex flex-row flex-a-start margin-top-m110 width_40proc color-1 container-mob">
-        <div id="develop_site_bitrix" class="title-1 width_100proc ta_left padding-top-25 padding-left-50">
+        <div id="develop_site_bitrix" class="title-1 width_100proc ta_left padding-top-35 padding-left-50">
             <?php echo Loc::getMessage("TITLE_ABOUT_2");?>
         </div>
         <div class="p-1 padding-left-50 width_60proc margin-top-35">

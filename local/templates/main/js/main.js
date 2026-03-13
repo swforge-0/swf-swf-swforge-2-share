@@ -12,9 +12,9 @@ $(document).ready(function(){
       event.preventDefault();
 
       $('html, body').stop().animate({
-        scrollTop: $(target).offset().top
+        scrollTop: $(target).offset().top - 25
       }, 600, 'swing', function() {
-        window.location.hash = target;
+
       });
     }
   });
@@ -54,5 +54,14 @@ $(document).ready(function(){
         console.log(data);
       },
     });
+  });
+  
+  //Открытие / Закрытие мобильного меню
+  $("body").on("click",".menu-mob",function(){
+    if ($(".menu-1").css("display")=="none") {
+        $(".menu-1").css("display","flex");
+    } else {
+        $(".menu-1").css("display","none");
+    }
   });
 });
