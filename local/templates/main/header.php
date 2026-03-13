@@ -22,6 +22,13 @@
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/lightgallery/skins/default/style.css");
     
     $APPLICATION->SetTitle(Loc::getMessage("TITLE_RUS"));
+    
+    //Исключения для шапки на некоторых страницах
+    $view_cap=true;
+    if (strpos($_SERVER["REQUEST_URI"],"agreements")!==false) {
+        $view_cap=false;
+    }
+    $_SESSION["sett_view_cap"]=$view_cap;
 ?>
 <!DOCTYPE html>
 <html>
@@ -51,88 +58,96 @@
     </head>
     <body>
         <div class="container-big">
-            <div class="head-0">
-                <div class="container he_100p">
-                    <div class="menu-0 flex flex-col flex-a-start he_100p">
-                        <?php $APPLICATION->IncludeComponent(
-                            "bitrix:menu",
-                            "menu_uni",
-                            Array(
-                                "ROOT_MENU_TYPE" => "top",
-                                "MAX_LEVEL" => "1",
-                                "CHILD_MENU_TYPE" => "top",
-                                "USE_EXT" => "Y"
-                            )
-                        );
-                        ?>
-                    </div>
-                    <div class="menu-mob">
-                        <div class="menu-mob-item"></div>
-                        <div class="menu-mob-item"></div>
-                        <div class="menu-mob-item"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="head">
-                <div class="container">
-                    <div class="flex flex-col flex-a-start z-index-20">
-                        <a href="/" class="img-logo">
-                        </a>
-                        <div class="menu-1 flex flex-col flex-a-start">
+            <?php if($view_cap):?>
+                <div class="head-0">
+                    <div class="container he_100p">
+                        <div class="menu-0 flex flex-col flex-a-start he_100p">
                             <?php $APPLICATION->IncludeComponent(
                                 "bitrix:menu",
                                 "menu_uni",
                                 Array(
-                                    "ROOT_MENU_TYPE" => "left",
+                                    "ROOT_MENU_TYPE" => "top",
                                     "MAX_LEVEL" => "1",
-                                    "CHILD_MENU_TYPE" => "left",
+                                    "CHILD_MENU_TYPE" => "top",
                                     "USE_EXT" => "Y"
                                 )
                             );
                             ?>
                         </div>
-                    </div>
-                    <div id="1C_integ" class="cont-1 z-index-15">
-                        <div class="title-1">
-                            <?php echo Loc::getMessage("TITLE_ABOUT_1");?>
+                        <div class="menu-mob">
+                            <div class="menu-mob-item"></div>
+                            <div class="menu-mob-item"></div>
+                            <div class="menu-mob-item"></div>
                         </div>
-                        <div class="p-1 margin-top-30 width_90proc">
-                            <?php echo Loc::getMessage("TITLE_ABOUT_1_1");?>
-                        </div>
-                        <div class="flex flex-row flex-a-start margin-top-30">
-                            <div class="flex flex-col flex-a-start">
-                                <div class="width-fit">
-                                    <img class="icon-1" src="<?php echo SITE_TEMPLATE_PATH;?>/img/about_1_1.svg?v=1.6" />
-                                </div>
-                                <div class="flex-spec-a-center-ta-left margin-left-30 p-1 width_70proc">
-                                    <?php echo Loc::getMessage("TITLE_ABOUT_1_2");?>
-                                </div>
-                            </div>
-                            <div class="flex flex-col flex-a-start margin-top-20">
-                                <div class="width-fit">
-                                    <img class="icon-1" src="<?php echo SITE_TEMPLATE_PATH;?>/img/about_1_2.svg?v=2.6" />
-                                </div>
-                                <div class="flex-spec-a-center-ta-left margin-left-30 p-1 width_70proc">
-                                    <?php echo Loc::getMessage("TITLE_ABOUT_1_3");?>
-                                </div>
-                            </div>
-                            <div class="flex flex-col flex-a-start margin-top-20">
-                                <div class="width-fit">
-                                    <img class="icon-1" src="<?php echo SITE_TEMPLATE_PATH;?>/img/about_1_3.svg?v=1.6" />
-                                </div>
-                                <div class="flex-spec-a-center-ta-left margin-left-30 p-1 width_70proc">
-                                    <?php echo Loc::getMessage("TITLE_ABOUT_1_4");?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="but_1 margin-top-70 go_to_link_ya" p_link="#id_form_1">
-                            <?php echo Loc::getMessage("BUT_LEAD_1");?>
-                        </div>
-                    </div>
-                    <div class="bg-1 z-index-12">
                     </div>
                 </div>
-                <div class="bg-2 z-index-10">
+                <div class="head">
+                    <div class="container">
+                        <div class="flex flex-col flex-a-start z-index-20">
+                            <a href="/" class="img-logo">
+                            </a>
+                            <div class="menu-1 flex flex-col flex-a-start">
+                                <?php $APPLICATION->IncludeComponent(
+                                    "bitrix:menu",
+                                    "menu_uni",
+                                    Array(
+                                        "ROOT_MENU_TYPE" => "left",
+                                        "MAX_LEVEL" => "1",
+                                        "CHILD_MENU_TYPE" => "left",
+                                        "USE_EXT" => "Y"
+                                    )
+                                );
+                                ?>
+                            </div>
+                        </div>
+                        <div id="1C_integ" class="cont-1 z-index-15">
+                            <div class="title-1">
+                                <?php echo Loc::getMessage("TITLE_ABOUT_1");?>
+                            </div>
+                            <div class="p-1 margin-top-30 width_90proc">
+                                <?php echo Loc::getMessage("TITLE_ABOUT_1_1");?>
+                            </div>
+                            <div class="flex flex-row flex-a-start margin-top-30">
+                                <div class="flex flex-col flex-a-start">
+                                    <div class="width-fit">
+                                        <img class="icon-1" src="<?php echo SITE_TEMPLATE_PATH;?>/img/about_1_1.svg?v=1.6" />
+                                    </div>
+                                    <div class="flex-spec-a-center-ta-left margin-left-30 p-1 width_70proc">
+                                        <?php echo Loc::getMessage("TITLE_ABOUT_1_2");?>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-a-start margin-top-20">
+                                    <div class="width-fit">
+                                        <img class="icon-1" src="<?php echo SITE_TEMPLATE_PATH;?>/img/about_1_2.svg?v=2.6" />
+                                    </div>
+                                    <div class="flex-spec-a-center-ta-left margin-left-30 p-1 width_70proc">
+                                        <?php echo Loc::getMessage("TITLE_ABOUT_1_3");?>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-a-start margin-top-20">
+                                    <div class="width-fit">
+                                        <img class="icon-1" src="<?php echo SITE_TEMPLATE_PATH;?>/img/about_1_3.svg?v=1.6" />
+                                    </div>
+                                    <div class="flex-spec-a-center-ta-left margin-left-30 p-1 width_70proc">
+                                        <?php echo Loc::getMessage("TITLE_ABOUT_1_4");?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="but_1 margin-top-70 go_to_link_ya" p_link="#id_form_1">
+                                <?php echo Loc::getMessage("BUT_LEAD_1");?>
+                            </div>
+                        </div>
+                        <div class="bg-1 z-index-12">
+                        </div>
+                    </div>
+                    <div class="bg-2 z-index-10">
+                    </div>
                 </div>
-            </div>
-            <div class="body">
+            <?php endif;?>
+            <?php
+                $dop_class="";
+                if(!$view_cap){
+                    $dop_class="body_no_margin";
+                }
+            ?>
+            <div class="body <?php echo $dop_class;?>">
