@@ -3,7 +3,14 @@
     use Bitrix\Main\Localization\Loc;
     use Bitrix\Main\Page\Asset;
     
+    //def настройки стилизации
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/default.css");
+    //Шрифты
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/fonts/calibri/style.css");
+    //Стили шаблона
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/object_def.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/objects.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/menu.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/main.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/mobile.css");
     

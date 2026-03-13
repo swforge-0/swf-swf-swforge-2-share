@@ -1,0 +1,104 @@
+.title-1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.title-1 span {
+    color: #ee0000;
+}
+
+.title-2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ee0000;
+}
+
+.title-2 span {
+    color: #000;
+}
+
+.title-3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+
+.title-3 span {
+    color: #ee0000;
+}
+
+.p-1 {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.p-1 span {
+    color: #ee0000;
+    font-weight: 500;
+}
+
+.p-2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.color-1 {
+    background-color: #f9f9f9;
+}
+
+.color-2 {
+    background-color: #000;
+}
+
+.color-3 {
+    background-color: #fff;
+}
+
+.icon-1 {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-2 {
+    width: 18px;
+    height: 18px;
+}
+
+.link_contact {
+    display: block;
+    width: fit-content;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.link_contact:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.but_1 {
+    width: fit-content;
+    padding: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #db4437;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.but_1:hover {
+    background-color: #d95e53;
+}
+
+.form-1 {
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-1 input {
+    padding: 20px;
+    margin-right: 10px;
+}

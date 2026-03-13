@@ -156,6 +156,7 @@
     .img-logo {
         width: 220px;
         height: 94px;
+        margin-left: -5px;
     }
     .menu-mob {
         display: flex;
@@ -168,6 +169,16 @@
     }
     .head-0 {
         position: fixed;
+    }
+}
+@media (max-width: 799px) {
+    .foot .container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .menu-2 {
+        margin-left: 0px;
+        margin-top: 40px;
     }
 }
 @media (max-width: 500px) {

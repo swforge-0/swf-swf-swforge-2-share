@@ -2,7 +2,7 @@
 <?php 
     use Bitrix\Main\Localization\Loc;
 ?>
-<div class="color-1">
+<div class="sect-form color-1">
     <div class="container">
         <div class="form-1_flex_container flex flex-col flex-a-center padding-bottom-30">
             <div class="bg-5">

@@ -17,7 +17,7 @@
             </div>
             <?php if($_SESSION["sett_view_cap"]):?>
                 <div class="foot" id="y_foot">
-                    <div class="container flex flex-col flex-a-sb foot-bg-6">
+                    <div class="container flex flex-col flex-a-sb bg-6">
                         <div class="width-fit flex flex-row flex-a-start">
                             <a href="/" class="img-logo-foot">
                             </a>
