@@ -76,6 +76,17 @@
     border-bottom: 1px solid #fff;
 }
 
+.link_red {
+    width: fit-content;
+    color: #ee0000;
+    text-decoration: none;
+    text-underline-offset: 4px;
+}
+
+.link_red:hover {
+    text-decoration: underline;
+}
+
 .but_1 {
     width: fit-content;
     padding: 40px;

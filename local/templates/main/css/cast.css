@@ -1,0 +1,14 @@
+.bx-livechat-dialog {
+    height: 100%;
+}
+
+.b24-widget-button-inner-mask {
+    height: unset !important;
+}
+
+@media (max-width: 1444px) {
+    .b24-widget-button-wrapper {
+        right: 30px !important;
+        bottom: 30px !important;
+    }
+}

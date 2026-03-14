@@ -8,8 +8,8 @@
     $MESS["TITLE_ABOUT_1_4"]="Выгрузка результатов обработки заказов на сайт для уведомления клиентов";
     $MESS["BUT_LEAD_1"]="Заказать консультацию";
     $MESS["TITLE_FORM_1_1"]="<span>У вас </span>остались вопросы?";
-    $MESS["TITLE_FORM_1_2"]="Оставьте свои контакты, мы вам перезвоним!";
-    $MESS["TITLE_FORM_1_3"]="Я согласен на <span>обработку персональных данных</span>";
+    $MESS["TITLE_FORM_1_2"]="Оставьте свои контакты, мы свяжемся с вами!";
+    $MESS["TITLE_FORM_1_3"]="Я согласен на <a href='/agreements/policy/' class='link_red' target='_blank'>обработку персональных данных</a>";
     $MESS["FORM_FIELD_PHONE"]="Телефон";
     $MESS["FORM_FIELD_NAME"]="Ваше имя";
     $MESS["TITLE_ABOUT_2"]="<span>Разработка сайтов</span> на БУС";

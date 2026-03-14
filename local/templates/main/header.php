@@ -12,6 +12,7 @@
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/objects.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/menu.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/main.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/cast.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/mobile.css");
     
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/jquery-3.5.1.min.js");
@@ -27,6 +28,10 @@
     //lightgallery
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/lightgallery/lightgallery.js");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/lightgallery/skins/default/style.css");
+    
+    //notie
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/notie/notie.js");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/notie/notie.css");
     
     $APPLICATION->SetTitle(Loc::getMessage("TITLE_RUS"));
     
@@ -62,6 +67,13 @@
         <meta name="theme-color" content="#ffffff">
         <?php //lightgallery - инициализация?>
         <script>lightgallery.init();</script>
+        <?php //b24 виджет?>
+        <script>
+            (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+            })(window,document,'https://cdn-ru.bitrix24.ru/b35943324/crm/site_button/loader_1_er1c8s.js');
+        </script>
     </head>
     <body>
         <div class="container-big">
