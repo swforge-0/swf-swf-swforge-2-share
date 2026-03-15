@@ -70,5 +70,14 @@
             <?php endif;?>
         <?php //.container-big ?>
         </div>
+        <?php
+            //Куки всплывашка
+            $APPLICATION->IncludeComponent(
+                "swf:other",
+                "cookie_notice",
+                [
+                ],
+            );
+        ?>
     </body>
 </html>

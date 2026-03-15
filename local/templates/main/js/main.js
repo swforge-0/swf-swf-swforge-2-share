@@ -43,14 +43,20 @@ $(document).ready(function(){
         
         if (p_sogl!="1") {
             notie.alert({ type: 'error', text: 'Нет согласия', time: 3 });
+            //Цель ym
+            ym(107706358,'reachGoal','lid-send-error');
             return;
         }
         if (p_phone=="") {
             notie.alert({ type: 'error', text: 'Не заполнен телефон', time: 3 });
+            //Цель ym
+            ym(107706358,'reachGoal','lid-send-error');
             return;
         }
         if (p_name=="") {
             notie.alert({ type: 'error', text: 'Не заполнено имя', time: 3 });
+            //Цель ym
+            ym(107706358,'reachGoal','lid-send-error');
             return;
         }
                 
@@ -65,6 +71,8 @@ $(document).ready(function(){
             },
             success: function(data) {
                 notie.alert({ type: 'success', text: 'Заявка успешно отправлена', time: 3 });
+                //Цель ym
+                ym(107706358,'reachGoal','lid-send-success')
             },
         });
     });

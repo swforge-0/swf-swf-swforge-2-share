@@ -1,3 +1,10 @@
+@media (min-width: 1321px) {
+    .sect-2 {
+        margin-top: 75px;
+        margin-bottom: 100px;
+    }
+}
+
 @media (max-width: 1817px) {
     .sect-1 .develop_site_bitrix .width_60proc {
         width: 80%;

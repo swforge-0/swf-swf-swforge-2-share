@@ -3,12 +3,13 @@
     use Bitrix\Main\Localization\Loc;
     use Bitrix\Main\Page\Asset;
     
-    //def настройки стилизации
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/default.css");
     //Шрифты
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/fonts/calibri/style.css");
-    //Стили шаблона
+    //def настройки стилизации
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/default.css");
+    //def конструкции
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/object_def.css");
+    //Стили шаблона
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/objects.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/menu.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/main.css");
@@ -18,18 +19,18 @@
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/jquery-3.5.1.min.js");
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/main.js");
     
-    //photostack
+    //photostack - Слайдер
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/photostack/modernizr.min.js");
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/photostack/classie.js");
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/photostack/photostack.js");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/photostack/component.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/photostack/normalize.css");
     
-    //lightgallery
+    //lightgallery - Увеличитель изображений
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/lightgallery/lightgallery.js");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/lightgallery/skins/default/style.css");
     
-    //notie
+    //notie - Уведомления
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/plugins/notie/notie.js");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/plugins/notie/notie.css");
     
@@ -39,6 +40,11 @@
     $view_cap=true;
     if (strpos($_SERVER["REQUEST_URI"],"agreements")!==false) {
         $view_cap=false;
+    }
+    if (defined('ERROR_404')) {
+        if (ERROR_404=="Y") {
+            $view_cap=false;
+        }
     }
     $_SESSION["sett_view_cap"]=$view_cap;
 ?>
@@ -67,13 +73,26 @@
         <meta name="theme-color" content="#ffffff">
         <?php //lightgallery - инициализация?>
         <script>lightgallery.init();</script>
-        <?php //b24 виджет?>
+        <?php //b24 виджет ?>
         <script>
             (function(w,d,u){
                 var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
                 var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
             })(window,document,'https://cdn-ru.bitrix24.ru/b35943324/crm/site_button/loader_1_er1c8s.js');
         </script>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function(m,e,t,r,i,k,a){
+                m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+            })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107706358', 'ym');
+
+            ym(107706358, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/107706358" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
     </head>
     <body>
         <div class="container-big">
